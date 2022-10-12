@@ -1,0 +1,69 @@
+/* layout */
+
+main{
+  height: 50vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+body{
+  background-color:darkcyan;
+}
+/* layout */
+
+/* element style */
+input{
+  all: unset;
+  text-align: center;
+  padding: 5px 12px;
+  border: .5px solid darkcyan;
+  border-radius: 20px;
+  width: 200px;
+}
+
+select{
+  text-align: center;
+  padding: 5px 12px;
+  border: .5px solid darkcyan;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+button{
+  all: unset;
+  background-color: rgb(232, 229, 229);
+  margin: 0 .5em;
+  padding: .5em 1em;
+  font-size: 1.2em;
+  border-radius: 20px;
+  color: darkcyan;
+  border: 2px solid white;
+}
+
+button:hover{
+  border: 2px solid darkcyan;
+  background-color: rgb(220, 218, 218);
+  box-shadow: 2px 2px 2px rgba(0 , 0, 0, 0.2);
+}
+
+.container-custom{
+  background-color: white;
+  border-radius: 20px;
+}
+
+h2{
+  color: white;
+  font-weight: 700;
+}
+
+h5, .name-passenger{
+  font-weight: 700;
+}
+
+.row.custom-border{
+  border-top: .5px solid lightgrey;
+  border-bottom: .5px solid lightgrey;
+}
+
+/* element style */

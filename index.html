@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.css' integrity='sha512-tBwPRcI1t+0jTsIMtf//+V1f0xAWHh7pvPE82A2n5FcBrzl6b0LRE6XnxUTRHti59y4Js7z4Wb/zal2HBsVVOQ==' crossorigin='anonymous'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css' integrity='sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Form-Train-Ticket</title>
+</head>
+<body>
+  <main>
+<!-- top container -->
+    <h2 class="text-uppercase text-center pb-2">Calcola il prezzo del tuo biglietto</h2>
+    <div class="container container-custom px-5">
+      <div class="row pt-4 row-cols-1 row-cols-xl-3">
+        <div class="col d-flex flex-column align-items-center ">
+          <h6 class="pt-2">Nome Cognome</h6>
+          <input class="w-75 name" type="text" value="">
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <h6 class="pt-2">Km da percorrere</h6>
+          <input class="w-25 km" type="text" value="km">
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+          <h6 class="pt-2">Fascia d'età</h6>
+          <select class="w-75 age" name="" id="">
+            <option value="adult">Maggiorenne</option>
+            <option value="underage">Minorenne</option>
+            <option value="aged">Anziano (over 65)</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center p-5">
+          <button id="send">Genera</button>
+          <button id="reset">Annulla</button>
+        </div>
+      </div>
+    </div>
+<!-- top container -->
+<!-- bottom container -->
+    <h2 class="text-uppercase text-center pt-5 pb-2">il tuo biglietto</h2>
+    <div class="container container-custom py-4 px-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-uppercase pb-2">dettagli passeggeri</h5>
+        </div>
+      </div>
+      <div class="row pt-2  pb-2  custom-border">
+        <div class="col-12 col-xl-3">
+          <h5 class="text-uppercase">nome passeggero</h5>
+          <p class="name-passenger"></p>
+        </div>
+        <div class="col-12 col-xl-8 offset-xl-1">
+          <table class="table-borderless w-100 d-none d-md-table">
+            <thead>
+              <tr>
+                <th class="w-25" scope="col">Offerta</th>
+                <th class="w-25" scope="col">Carrozza</th>
+                <th class="w-25" scope="col">Codice CP</th>
+                <th class="w-25" scope="col">Costo biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="tcol-offer"></td>
+                <td id="tcol-place"></td>
+                <td id="tcol-code"></td>
+                <td id="tcol-price"></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-borderless w-100 d-md-none">
+            <thead>
+              <tr>
+                <th class="w-50" scope="col">Offerta</th>
+                <th class="w-50" scope="col">Carrozza</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="tcol-offer"></td>
+                <td id="tcol-place"></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-borderless w-100 d-md-none">
+            <thead>
+              <tr>
+                <th class="w-50" scope="col">Codice CP</th>
+                <th class="w-50" scope="col">Costo biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="tcol-code"></td>
+                <td id="tcol-price"></td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+<!-- bottom container -->
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
