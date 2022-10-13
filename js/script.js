@@ -67,6 +67,5 @@ function del (){
   document.querySelector('#tcol-price-2').innerHTML = "" ;
   document.querySelector('#tcol-offer-2').innerHTML = "";
   document.querySelector('#tcol-code-2').innerHTML = "";
-  place = Math.floor(Math.random() * 20) + 1; 
   document.querySelector('#tcol-place-2').innerHTML = "";
 }
